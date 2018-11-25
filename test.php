@@ -3,7 +3,7 @@ $urlkey = @$_GET["urlkey"];
 $time = @$_GET["time"];
 
 if($urlkey == 'ESPN_2_HD'){
-	$canal2 = "https://claro-video.github.io/dat/fk/" . $urlkey . ".dat";
+	$canal2 = "https://claro-video.github.io/dat/fe/" . $urlkey . ".dat";
 	$fp=fopen("$canal2", "r");
 	fpassthru($fp);
    }else{
