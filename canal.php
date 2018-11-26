@@ -1,7 +1,7 @@
 <?
 $id = @$_GET['id'];
 $numbanners = 4; //numero de banners que se rotarán
-$random = rand(2,$numbanners);
+$random = rand(1,$numbanners);
 $url = array();
  
 $url[1] = "http://claro.pi-dns.tk/C1a4o/" . $id . "/index.m3u8";
