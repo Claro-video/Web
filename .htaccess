@@ -4,4 +4,5 @@ RewriteRule ^01/(.+)/(.+).m3u8$ hls_kr.php?id=$1&calidad=4
 RewriteRule ^dina/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
 RewriteRule ^canal/(.+)/(.+).m3u8$ canal.php?id=$1&calidad=4
 RewriteRule ^C1a4o/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
- RewriteRule ^dl/(.+)/(.+)$ dl.php?id=$1&url=$2 
+RewriteRule ^dl/(.+)/(.+)/(.+)/(.+)$ dl.php?id=$1&url=$2 
+Segment(15432332707819666).ts?ip=54.221.56.28&exp=1600833301&hmac=5fe237466eb7c83b0cbe652ce0fd7005b5b6c61e
