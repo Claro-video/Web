@@ -3,6 +3,7 @@
 $server_anfitrion = "http://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
+$server_ip = $_SERVER['SERVER_ADDR'];
 
 
 $canal = file($server_anfitrion. "/" . $id . "/server.kr");
@@ -35,7 +36,6 @@ $obtener8 = trim(preg_replace("/(https:\/\/)(.*)(time\/2\/t)(.*)(dat)/","$server
 $obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/3\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=3&urlkey=$id",$obtener8));
 
 
-$server_ip = $_SERVER['SERVER_ADDR'];
 $obtener10 = trim(str_replace("ip=$server_ip&","",$obtener9));
 
 echo $obtener10;
