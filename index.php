@@ -8,3 +8,6 @@
   </style>
   <p><b>404.</b> <ins>That’s an error.</ins>
   <p>The requested URL <code>/</code> was not found on this server.  <ins>That’s all we know.</ins>
+<?php
+echo $_SERVER['SERVER_ADDR'];
+?>
