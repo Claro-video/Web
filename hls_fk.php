@@ -1,5 +1,5 @@
 <?php
-
+$server_ip = $_SERVER['SERVER_ADDR'];
 $server_anfitrion = "http://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
@@ -31,7 +31,6 @@ $obtener5 = trim(str_replace("http://latamliveclarovideo.akamaized.net","http://
 $obtener6 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener5));
 $obtener7 = trim(preg_replace("/(https:\/\/)(.*)(t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener6));
 
-$server_ip = $_SERVER['SERVER_ADDR'];
 $obtener8 = trim(str_replace("ip=$server_ip&","",$obtener7));
 
 
