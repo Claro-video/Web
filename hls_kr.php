@@ -35,12 +35,14 @@ $obtener8 = trim(preg_replace("/(https:\/\/)(.*)(time\/2\/t)(.*)(dat)/","$server
 $obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/3\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=3&urlkey=$id",$obtener8));
 
 
+$server_ip = $_SERVER['SERVER_ADDR'];
+$obtener10 = trim(str_replace("ip=$server_ip&","",$obtener9));
 
-echo $obtener9;
+echo $obtener10;
 } else {
 $canal2 = $server_anfitrion . "/hls-kr.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
-echo $obtener9;
+echo $obtener10;
 }
 
 
