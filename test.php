@@ -1,6 +1,6 @@
 <?
 $id = @$_GET['id'];
-$numbanners = 1; //numero de banners que se rotarán
+$numbanners = 5; //numero de banners que se rotarán
 $random = rand(1,$numbanners);
 $url = array();
  
