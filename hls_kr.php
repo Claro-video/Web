@@ -1,6 +1,6 @@
 <?php
 
-$server_anfitrion = "http://" . $_SERVER['SERVER_NAME'];
+$server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
 $server_ip = $_SERVER['SERVER_ADDR'];
