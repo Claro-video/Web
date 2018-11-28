@@ -38,11 +38,11 @@ $obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/3\/t)(.*)(dat)/","$server
 
 $obtener10 = trim(str_replace("ip=$server_ip&","",$obtener9));
 
-echo $obtener10;
+echo $obtener9;
 } else {
 $canal2 = $server_anfitrion . "/hls-kr.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
-echo $obtener10;
+echo $obtener9;
 }
 
 
