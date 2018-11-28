@@ -31,9 +31,13 @@ $obtener5 = trim(str_replace("http://latamliveclarovideo.akamaized.net","http://
 $obtener6 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener5));
 $obtener7 = trim(preg_replace("/(https:\/\/)(.*)(t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener6));
 
-$obtener8 = trim(str_replace("ip=$server_ip&","",$obtener7));
-
-
+$obtener8 = trim(str_replace("ip=54.216.173.254&","",$obtener7));
+$obtener8 = trim(str_replace("ip=54.159.204.122&","",$obtener7));
+$obtener8 = trim(str_replace("ip=54.198.190.104&","",$obtener7));
+$obtener8 = trim(str_replace("ip=54.159.14.241&","",$obtener7));
+$obtener8 = trim(str_replace("ip=54.195.39.172&","",$obtener7));
+$obtener8 = trim(str_replace("ip=54.155.193.17&","",$obtener7));
+ 
 echo $obtener8;
 } else {
 $canal2 = $server_anfitrion . "/hls-fk.php?id=" . $id;
