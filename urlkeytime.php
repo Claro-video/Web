@@ -22,7 +22,7 @@ if($urlkey == 'ESTRELLAS_HD'){
 	fpassthru($fp);
    }
    }
-   }
+   } 
 
 
      ?>
