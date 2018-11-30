@@ -3,6 +3,10 @@ $server_ip = $_SERVER['SERVER_ADDR'];
 $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
+      $d=rand(1,255);
+      $d2=rand(1,255);
+      $d3=rand(1,255);
+      $d4=rand(1,200);
 
 
 $canal = file($server_anfitrion. "/" . $id . "/server.fk");
@@ -30,7 +34,7 @@ $obtener4 = trim(str_replace("http://mxliveclarovideo.akamaized.net","http://col
 $obtener5 = trim(str_replace("http://latamliveclarovideo.akamaized.net","http://colivechannelshls.clarovideo.com",$obtener4));
 $obtener6 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener5));
 $obtener7 = trim(preg_replace("/(https:\/\/)(.*)(t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener6));
-$obtener8 = trim(preg_replace("/(ip=.*)(&exp)/","ip=***.***.***.***&exp",$obtener7));
+$obtener8 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",$obtener7));
 
  
 echo $obtener8;
