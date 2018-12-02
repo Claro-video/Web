@@ -4,10 +4,10 @@ $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
 $server_ip = $_SERVER['SERVER_ADDR'];
-      $d=rand(1,255);
-      $d2=rand(1,255);
-      $d3=rand(1,255);
-      $d4=rand(1,200);
+      $d=rand(52,52);
+      $d2=rand(84,95);
+      $d3=rand(0,255);
+      $d4=rand(0,255);
 
 
 $canal = file($server_anfitrion. "/" . $id . "/server.kr");
