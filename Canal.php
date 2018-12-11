@@ -20,9 +20,15 @@ $canal2 = $server_anfitrion . "/02/" . $id . "/4.m3u8";
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
    }else{
+if($id == 'DISCOVERY_CIVILIZATION'){
+$canal2 = $server_anfitrion . "/02/" . $id . "/4.m3u8";
+$obtener3 = file_get_contents($canal2);
+echo $obtener3;
+   }else{
 $canal2 = $server_anfitrion . "/01/" . $id . "/4.m3u8";
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
+   }
    }
    }
    }
