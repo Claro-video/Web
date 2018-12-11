@@ -251,7 +251,7 @@ elseif ($id_solicitado == "DISCOVERY_CHANNEL_HD") {
 $alfin = "758419";
 }
 elseif ($id_solicitado == "DISCOVERY_CIVILIZATION") {
-$alfin = "762265";
+$alfin = "750841";
 }
 elseif ($id_solicitado == "DISCOVERY_HOME_HEALTH_HD") {
 $alfin = "758426";
