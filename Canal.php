@@ -28,7 +28,7 @@ $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
     }else{
-if($id == 'RCN_HD2'){
+if($id == 'RCN_2_HD'){
 $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
