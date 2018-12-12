@@ -2,6 +2,6 @@ RewriteEngine on
 RewriteRule ^02/(.+)/(.+).m3u8$ hls_fk.php?id=$1&calidad=4
 RewriteRule ^01/(.+)/(.+).m3u8$ hls_kr.php?id=$1&calidad=4
 RewriteRule ^dina/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
-RewriteRule ^canal/(.+)/(.+).m3u8$ canal.php?id=$1&calidad=4
+RewriteRule ^channel/(.+)/(.+).m3u8$ canal.php?id=$1&calidad=4
 RewriteRule ^C1a4o/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
 RewriteRule ^hls/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
