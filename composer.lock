@@ -14,7 +14,7 @@
     "prefer-lowest": false,
     "platform": {
         "ext-mbstring": "*",
-        "ext-mcrypt": "*",
+        "ext-mcrypt": "*"
     },
     "platform-dev": []
 }
