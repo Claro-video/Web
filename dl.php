@@ -24,10 +24,15 @@ $canal2 = $server_anfitrion . "/m3u8.02.php?" . $url . "&exp=". $exp ."&hmac=" .
     $fp=fopen("$canal2", "r");
     fpassthru($fp);
    }else{
+if($id == 'DISCOVERY_CIVILIZATION'){
+$canal2 = $server_anfitrion . "/m3u8.02.php?" . $url . "&exp=". $exp ."&hmac=" . $hmac;
+    $fp=fopen("$canal2", "r");
+    fpassthru($fp);
+   }else{
 $canal2 = $server_anfitrion . "/m3u8.01.php?" . $url . "&exp=". $exp ."&hmac=" . $hmac;
     $fp=fopen("$canal2", "r");
     fpassthru($fp);   
-
+   }
    }
    }
    }
