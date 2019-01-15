@@ -1,18 +1,8 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129767824-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-129767824-1');
-</script>
-
 <?php require("ID.php"); ?>
 <?php
 date_default_timezone_set('America/Bogota');
 
-$canal = "https://mfwkmobileandroid-api.clarovideo.net/services/player/getmedia?device_manufacturer=Lenovo&region=colombia&device_category=mobile&device_type=Lenovo%20A320t&stream_type=hls_kr&group_id=" . $alfin . "&device_id=71be677682638d54&format=json&api_version=v5.7&device_so=Android%204.4.2&device_model=android&device_name=A320t&preview=0&HKS=5encbbiojrvmqj7ma349iohnm2&authpt=12e4i8l6a581a&css=0&authpn=amco";
+$canal = "https://mfwkweb-api.clarovideo.net/services/player/getmedia?api_version=v5.8&authpn=html5player&authpt=ad5565dfgsftr&format=json&region=colombia&device_id=b9ae0d792d48a01f1ee0771e53a5f0df&device_category=web&device_model=html5&device_type=html5&device_so=Firefox&device_manufacturer=windows&HKS=(fdbdd5f4bece461330e2f3c8c5b78051)&preview=0&css=0&device_name=Firefox&crDomain=https://www.clarovideo.com&group_id=" . $alfin . "&stream_type=hls_kr";
 
 
 
