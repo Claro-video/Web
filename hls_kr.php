@@ -37,11 +37,10 @@ $obtener6 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hl
 $obtener7 = trim(preg_replace("/(https:\/\/)(.*)(t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener6));
 
 
-$obtener8 = trim(preg_replace("/(https:\/\/)(.*)(time\/2\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=2&urlkey=$id",$obtener7));
-$obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/3\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=3&urlkey=$id",$obtener8));
 
 
-$obtener10 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",$obtener559));
+
+$obtener10 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",$obtener7));
 
 echo $obtener10;
 } else {
