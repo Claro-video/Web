@@ -32,7 +32,7 @@ header("Content-type: application/vnd.apple.mpegurl");
 header("Content-Disposition: attachment; filename=$id.m3u8");
 $obtener4 = trim(str_replace("http://mxliveclarovideo.akamaized.net","http://colivechannelshls.clarovideo.com",$obtener2));
 $obtener5 = trim(str_replace("http://latamliveclarovideo.akamaized.net","http://colivechannelshls.clarovideo.com",$obtener4));
-$obtener6 = trim(str_replace("http://tstv.lcdn.claro.net.co/Content/hls_nagra/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener5));
+$obtener6 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener5));
 $obtener7 = trim(preg_replace("/(https:\/\/)(.*)(t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener6));
 $obtener8 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",$obtener7));
 
