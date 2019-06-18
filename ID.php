@@ -2,7 +2,7 @@
 $id_solicitado = htmlspecialchars($_GET["id"]);
 //$cali = htmlspecialchars($_GET["calidad"]);
 if ($id_solicitado == "CARACOL_HD") {
-$alfin = "768767";
+$alfin = "778902";
 }
 elseif ($id_solicitado == "CARACOL_INT") {
 $alfin = "758391";
