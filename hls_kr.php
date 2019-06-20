@@ -12,7 +12,7 @@ $server_ip = $_SERVER['SERVER_ADDR'];
 
 $canal = file($server_anfitrion. "/" . $id . "/server.kr");
 $header =
-"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36\r\n";
+"User-Agent:  AndroidDlaApk AndroidDlaApkAccedo\r\n";
 $cali = htmlspecialchars($_GET["calidad"]);
 
 $net = "http://colivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel(HBO_PLUS_HD)/Stream(05)/.m3u8";
