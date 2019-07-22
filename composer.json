@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": "*",
+        "php": "^7.0.0",
         "ext-mbstring": "*",
         "ext-mcrypt": "*"
     }
