@@ -1,4 +1,4 @@
-<?php
+ <?php
 $id_solicitado = htmlspecialchars($_GET["id"]);
 //$cali = htmlspecialchars($_GET["calidad"]);
 if ($id_solicitado == "CARACOL_HD-old") {
