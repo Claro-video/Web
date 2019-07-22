@@ -11,7 +11,7 @@ elseif ($id_solicitado == "WINSPORTS_HD") {
 $alfin = "717016";
 }
 elseif ($id_solicitado == "CANAL_UNO_HD") {
-$alfin = "758291";
+$alfin = "778853";
 }
 elseif ($id_solicitado == "ESPN_HD") {
 $alfin = "758479";
@@ -20,10 +20,10 @@ elseif ($id_solicitado == "ESPN_2_HD") {
 $alfin = "759422";
 }
 elseif ($id_solicitado == "ESPN_3_HD") {
-$alfin = "758339";
+$alfin = "778892";
 }
 elseif ($id_solicitado == "ESPN_PLUS_HD") {
-$alfin = "758289";
+$alfin = "778963";
 }
 elseif ($id_solicitado == "FOX_SPORTS_HD") {
 $alfin = "763489";
@@ -38,10 +38,10 @@ elseif ($id_solicitado == "CANAL_DE_LAS_ESTRELLAS") {
 $alfin = "762288";
 }
 elseif ($id_solicitado == "ESTRELLAS_HD") {
-$alfin = "758459";
+$alfin = "77888";
 }
 elseif ($id_solicitado == "RCN_HD") {
-$alfin = "758344";
+$alfin = "778872";
 }
 elseif ($id_solicitado == "CLARO_SPORTS_LATAM_HD") {
 $alfin = "717017";
