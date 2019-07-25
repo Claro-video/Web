@@ -47,13 +47,13 @@ elseif ($id_solicitado == "CLARO_SPORTS_LATAM_HD") {
 $alfin = "717017";
 }
 elseif ($id_solicitado == "CABLENOTICIAS_HD") {
-$alfin = "758440";
+$alfin = "778915";
 }
 elseif ($id_solicitado == "CLARO_SPORTS_COL_HD") {
 $alfin = "717022";
 }
 elseif ($id_solicitado == "CNN_ESPANOL") {
-$alfin = "758535";
+$alfin = "773793";
 }
 elseif ($id_solicitado == "HBO_PLUS_HD") {
 $alfin = "758578";
