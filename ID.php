@@ -26,7 +26,7 @@ elseif ($id_solicitado == "CANAL_UNO_HD") {
 $alfin = "778853";
 }
 elseif ($id_solicitado == "ESPN_HD") {
-$alfin = "758479";
+$alfin = "763498";
 }
 elseif ($id_solicitado == "ESPN_2_HD") {
 $alfin = "759422";
