@@ -166,6 +166,9 @@ $alfin = "745939";
 elseif ($id_solicitado == "FOX_SERIES_HD") {
 $alfin = "763416";
 }
+elseif ($id_solicitado == "FOX1_HD") {
+$alfin = "784978";
+}
 elseif ($id_solicitado == "FOX1_HD_SUB") {
 $alfin = "745832";
 }
