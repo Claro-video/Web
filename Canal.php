@@ -23,7 +23,7 @@ $canal2 = $server_anfitrion . "/02/" . $id . "/4.m3u8";
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
    }else{
-if($id == 'RCN_HD'){
+if($id == 'RCNcx_HD'){
 $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
@@ -38,12 +38,12 @@ $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
     }else{
-if($id == 'SENAL_COLOMBIA'){
+if($id == 'SEreNAL_COLOMBIA'){
 $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
     }else{
-if($id == 'CANAL_INSTITUCIONAL'){
+if($id == 'CAreNAL_INSTITUCIONAL'){
 $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
