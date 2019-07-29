@@ -37,7 +37,7 @@ $obtener6 = trim(str_replace("http://jjooliveclarovideo.akamaized.net","http://c
 $obtener61 = trim(str_replace("http://mxlivechannelshls.clarovideo.com","http://colivechannelshls.clarovideo.com",$obtener6));
 
 $obtener70 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener61));
-$obtener7 = trim(str_replace("/(https:\/\/)(.*)(Content\/hls_kr\/Live\/Channel)/","$server_anfitrion/dl.php?id=$id&url=",$obtener2));
+$obtener7 = trim(str_replace("/(.*)(Content\/hls_kr\/Live\/Channel)/","$server_anfitrion/dl.php?id=$id&url=",$obtener2));
  
 $obtener8 = trim(preg_replace("/(https:\/\/)(.*)(time\/1\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener7));
 $obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/2\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=2&urlkey=$id",$obtener8));
