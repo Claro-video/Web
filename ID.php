@@ -46,13 +46,13 @@ $alfin = "739485";
 elseif ($id_solicitado == "FOX_SPORTS3_HD") {
 $alfin = "763417";
 }
-elseif ($id_solicitado == "FOX_SPORTS_MX_HD") {
+elseif ($id_solicitado == "FOXSP1_MX_HD") {
 $alfin = "762787";
 }
-elseif ($id_solicitado == "FOX_SPORTS2_MX_HD") {
+elseif ($id_solicitado == "FOXSP2_MX_HD") {
 $alfin = "762801";
 }
-elseif ($id_solicitado == "FOX_SPORTS3_MX_HD") {
+elseif ($id_solicitado == "FOXSP3_MX_HD") {
 $alfin = "762802";
 }
 elseif ($id_solicitado == "CANAL_DE_LAS_ESTRELLAS") {
