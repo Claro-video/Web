@@ -34,8 +34,9 @@ header("Content-Disposition: attachment; filename=$id.m3u8");
 $obtener4 = trim(str_replace("http://mxliveclarovideo.akamaized.net","http://colivechannelshls.clarovideo.com",$obtener2));
 $obtener5 = trim(str_replace("http://latamliveclarovideo.akamaized.net","http://colivechannelshls.clarovideo.com",$obtener4));
 $obtener6 = trim(str_replace("http://jjooliveclarovideo.akamaized.net","http://colivechannelshls.clarovideo.com",$obtener5));
+$obtener6.1 = trim(str_replace("http://mxlivechannelshls.clarovideo.com","http://colivechannelshls.clarovideo.com",$obtener6));
 
-$obtener7 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener6));
+$obtener7 = trim(str_replace("http://colivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener6.1));
  
 $obtener8 = trim(preg_replace("/(https:\/\/)(.*)(time\/1\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=1&urlkey=$id",$obtener7));
 $obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/2\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=2&urlkey=$id",$obtener8));
@@ -45,11 +46,11 @@ $obtener10 = trim(preg_replace("/(https:\/\/)(.*)(time\/3\/t)(.*)(dat)/","$serve
 $obtener11 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",$obtener10));
 $obtener12 = trim(str_replace("http://mxlivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener10));
 
-echo $obtener12;
+echo $obtener10;
 } else {
 $canal2 = $server_anfitrion . "/hls-kr.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
-echo $obtener12;
+echo $obtener10;
 }
 
 
