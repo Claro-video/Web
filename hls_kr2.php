@@ -42,13 +42,14 @@ $obtener9 = trim(preg_replace("/(https:\/\/)(.*)(time\/2\/t)(.*)(dat)/","$server
 $obtener10 = trim(preg_replace("/(https:\/\/)(.*)(time\/3\/t)(.*)(dat)/","$server_anfitrion/urlkeytime.php?time=3&urlkey=$id",$obtener9));
 
 
-$obtener11 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",obtener10));
+$obtener11 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",$obtener10));
+$obtener12 = trim(str_replace("http://mxlivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel","$server_anfitrion/dl.php?id=$id&url=",$obtener10));
 
-echo $obtener10;
+echo $obtener12;
 } else {
 $canal2 = $server_anfitrion . "/hls-kr.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
-echo $obtener10;
+echo $obtener12;
 }
 
 
