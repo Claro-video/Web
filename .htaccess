@@ -5,4 +5,4 @@ RewriteRule ^dina/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
 RewriteRule ^channel/(.+)/(.+).m3u8$ canal.php?id=$1&calidad=4
 RewriteRule ^C1a4o/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
 RewriteRule ^hls/(.+)/(.+).m3u8$ Canal.php?id=$1&calidad=4
-RewriteRule ^dina/H2_HD/(.+).m3u8$ Canal.php?id=H2_HD&calidad=3
+RewriteRule ^dina/H2_HD/index.m3u8$ hls_kr.php?id=H2_HD&calidad=3
