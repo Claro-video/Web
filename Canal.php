@@ -43,8 +43,8 @@ $canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
     }else{
-if($id == 'CAreNAL_INSTITUCIONAL'){
-$canal2 = $server_anfitrion . "/C@nal.php?id=" . $id;
+if($id == 'H2_HD'){
+$canal2 = $server_anfitrion . "/01/" . $id . "/3.m3u8";
 $obtener3 = file_get_contents($canal2);
 echo $obtener3;
     }else{
