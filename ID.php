@@ -391,7 +391,7 @@ $alfin = "762255";
 elseif ($id_solicitado == "GLITZ") {
 $alfin = "778794";
 }
-elseif ($id_solicitado == "H2 HD") {
+elseif ($id_solicitado == "H2_HD") {
 $alfin = "778958";
 }
 elseif ($id_solicitado == "HISTORY_CHANNEL_HD") {
