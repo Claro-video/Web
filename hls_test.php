@@ -3,6 +3,7 @@
 $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
+$encodes=@$_GET['encodes'];
 $server_ip = $_SERVER['SERVER_ADDR'];
       $d=rand(52,52);
       $d2=rand(84,95);
@@ -10,7 +11,7 @@ $server_ip = $_SERVER['SERVER_ADDR'];
       $d4=rand(0,255);
 
 
-$canal = file($server_anfitrion. "/" . $id . "/server.kr");
+$canal = file($server_anfitrion. "/" . $id . "/" . $encodes . "/server");
 $header =
 "User-Agent:  AndroidDlaApk AndroidDlaApkAccedo\r\n";
 $cali = htmlspecialchars($_GET["calidad"]);
@@ -44,7 +45,7 @@ $obtener10 = trim(preg_replace("/(ip=.*)(&exp)/","ip=$d.$d2.$d3.$d4&exp",obtener
 
 echo $obtener2;
 } else {
-$canal2 = $server_anfitrion . "/hls-kr.php?id=" . $id;
+$canal2 = $server_anfitrion . "/hls-test.php?id=" . $id . "&encodes=" . $encodes";
 $obtener3 = file_get_contents($canal2);
 echo $obtener2;
 }
