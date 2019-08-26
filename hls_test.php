@@ -1,5 +1,7 @@
-<?php
 
+<?php
+$filse =  $id . "/server.test";
+unlink($filse);
 $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
