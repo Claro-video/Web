@@ -34,6 +34,8 @@ $file = fopen($id_solicitado . "/server.test.kr", "w");
 fputs($file,$obtener2);
 fclose($file);
    }
+    }
+ }
 
 function get_data_homs($url, $data){
 $options = array(
