@@ -2,7 +2,6 @@
 
 
 <?php
-$carp3= "$id ."/" $encodes";
 $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
@@ -13,6 +12,7 @@ $server_ip = $_SERVER['SERVER_ADDR'];
       $d3=rand(0,255);
       $d4=rand(0,255);
 
+$carp3= "$id ."/" $encodes";
 
 $canal = file($server_anfitrion. "/" . $carp3 ."/server.test");
 $header =
