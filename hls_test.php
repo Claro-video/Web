@@ -11,7 +11,7 @@ $server_ip = $_SERVER['SERVER_ADDR'];
       $d4=rand(0,255);
 
 
-$canal = file($server_anfitrion. "/" . $id . "/server." . $encodes);
+$canal = file($server_anfitrion. "/" . $id . "/server.test");
 $header =
 "User-Agent:  AndroidDlaApk AndroidDlaApkAccedo\r\n";
 $cali = htmlspecialchars($_GET["calidad"]);
