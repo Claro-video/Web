@@ -12,9 +12,9 @@ $server_ip = $_SERVER['SERVER_ADDR'];
       $d3=rand(0,255);
       $d4=rand(0,255);
 
-$carp3= "$id ."/" $encodes";
+$carp3= "$server_anfitrion. "/" . $id . "/" $encodes";
 
-$canal = file($server_anfitrion. "/" . $carp3 ."/server.test");
+$canal = file( $carp3 ."/server.test");
 $header =
 "User-Agent:  AndroidDlaApk AndroidDlaApkAccedo\r\n";
 $cali = htmlspecialchars($_GET["calidad"]);
