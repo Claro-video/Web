@@ -24,7 +24,7 @@ echo $id_solicitado . "/server." . $encodes . ;
 
 echo $obtener2;
 
-$file = fopen($id_solicitado . "/server." . $encodes .  , "w");
+$file = fopen($id_solicitado . "/server." . $encodes , "w");
 fputs($file,$obtener2);
 fclose($file);
 
