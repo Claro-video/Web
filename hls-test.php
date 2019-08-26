@@ -20,6 +20,8 @@ $server2 = $server['response']['media']['video_url'];
 $obtener2 = get_data_homs($server2 , $header);
 //header("Content-type: application/vnd.apple.mpegurl");
 //header("Content-Disposition: attachment; filename=playlist.m3u8");
+echo $id_solicitado . "/server." . $encodes;
+
 echo $obtener2;
 
 $file = fopen($id_solicitado . "/server." . $encodes  , "w");
@@ -36,5 +38,4 @@ $context = stream_context_create($options);
 $file = file_get_contents($url, false, $context);
 return $file;
 }
-echo $id_solicitado . "/server." . $encodes;
 
