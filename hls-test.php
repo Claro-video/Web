@@ -23,7 +23,7 @@ $obtener2 = get_data_homs($server2 , $header);
 
 echo $obtener2;
 
-$file = fopen($id_solicitado . "/server.test", "w");
+$file = fopen($id_solicitado . "/server.test", "w+");
 fputs($file,$obtener2);
 fclose($file);
 
