@@ -23,10 +23,17 @@ $obtener2 = get_data_homs($server2 , $header);
 
 echo $obtener2;
 
-$file = fopen($id_solicitado . "/server.test", "w+");
+
+if($encodes == 'hls'){
+$file = fopen($id_solicitado . "/server.test.fk", "w");
 fputs($file,$obtener2);
 fclose($file);
-
+   }else{
+if($encodes == 'hls_kr'){
+$file = fopen($id_solicitado . "/server.test.kr", "w");
+fputs($file,$obtener2);
+fclose($file);
+   }
 
 function get_data_homs($url, $data){
 $options = array(
