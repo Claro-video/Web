@@ -18,7 +18,7 @@ $obtener2 = get_data_homs($server2 , $header);
 //header("Content-type: application/vnd.apple.mpegurl");
 //header("Content-Disposition: attachment; filename=playlist.m3u8");
 echo $obtener2;
-$carp3= $id_solicitado ."/"$encodes .;
+$carp3= "$id_solicitado ."/" $encodes";
 $file = fopen($carp3 . "/server.test", "w");
 fputs($file,$obtener2);
 fclose($file);
