@@ -18,11 +18,8 @@ $obtener2 = get_data_homs($server2 , $header);
 //header("Content-type: application/vnd.apple.mpegurl");
 //header("Content-Disposition: attachment; filename=playlist.m3u8");
 echo $obtener2;
-$filse = $id_solicitado . "/server.test";
-unlink($filse);
 
 $file = fopen($id_solicitado . "/server.test", "w");
-
 fputs($file,$obtener2);
 fclose($file);
 
