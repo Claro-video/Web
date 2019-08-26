@@ -272,7 +272,7 @@ if (isset($_POST["miniProxyFormAction"])) {
     $url = $formAction . "?" . http_build_query($queryParams);
   } else {
     $url = substr($_SERVER["REQUEST_URI"], strlen($_SERVER["SCRIPT_NAME"]) + 1);
-    $url = 'http://tstv.lcdn.claro.net.co/Content/hls_kr/Live/Channel'.$url; //aqui armamos la url
+    $url = 'http://colivechannelshls.clarovideo.com/Content/hls_kr/Live/Channel'.$url; //aqui armamos la url
   }
 }
 if (empty($url)) {
