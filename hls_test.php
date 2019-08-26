@@ -2,7 +2,7 @@
 
 
 <?php
-$carp3= "$id_solicitado ."/" $encodes";
+$carp3= "$id ."/" $encodes";
 $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
 $channel=@$_GET['channel'];
@@ -14,7 +14,7 @@ $server_ip = $_SERVER['SERVER_ADDR'];
       $d4=rand(0,255);
 
 
-$canal = file($server_anfitrion. "/" . $id ."/" $encodes "/server.test");
+$canal = file($server_anfitrion. "/" . $carp3 ."/server.test");
 $header =
 "User-Agent:  AndroidDlaApk AndroidDlaApkAccedo\r\n";
 $cali = htmlspecialchars($_GET["calidad"]);
