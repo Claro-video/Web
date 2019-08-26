@@ -1,6 +1,12 @@
 
 <?php
-$filse =  $id . "/server.test";
+$id = @$_GET['id'];
+
+rename($id . "/server.test", $id . "/server.test3");
+?>
+
+<?php
+$filse =  $id . "/server.test3";
 unlink($filse);
 $server_anfitrion = "https://" . $_SERVER['SERVER_NAME'];
 $id = @$_GET['id'];
