@@ -2,7 +2,7 @@
 <?php
 date_default_timezone_set('America/Bogota');
 
-$canal = "https://mfwkweb-api.clarovideo.net/services/player/getmedia?api_version=v5.8&authpn=html5player&authpt=ad5565dfgsftr&format=json&region=colombia&device_id=b9ae0d792d48a01f1ee0771e53a5f0df&device_category=web&device_model=html5&device_type=html5&device_so=Firefox&device_manufacturer=windows&HKS=(fdbdd5f4bece461330e2f3c8c5b78051)&preview=0&css=0&device_name=Firefox&crDomain=https://www.clarovideo.com&group_id=" . $alfin . "&stream_type=hls_kr";
+$canal = "https://microfwk-hbopaseo.clarovideo.net/services/player/getmedia?api_version=v5.8&authpn=html5player&authpt=ad5565dfgsftr&format=json&region=colombia&device_id=b9ae0d792d48a01f1ee0771e53a5f0df&device_category=web&device_model=html5&device_type=html5&device_so=Firefox&device_manufacturer=windows&HKS=(fdbdd5f4bece461330e2f3c8c5b78051)&preview=0&css=0&device_name=Firefox&crDomain=https://www.clarovideo.com&group_id=" . $alfin . "&stream_type=hls_kr";
 
 
 
