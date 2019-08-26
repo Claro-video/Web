@@ -22,7 +22,7 @@ $obtener2 = get_data_homs($server2 , $header);
 //header("Content-Disposition: attachment; filename=playlist.m3u8");
 echo $obtener2;
 
-$file = fopen($id_solicitado . "/test/server", "w");
+$file = fopen($id_solicitado . "/server." . $encodes  , "w");
 fputs($file,$obtener2);
 fclose($file);
 
@@ -36,5 +36,5 @@ $context = stream_context_create($options);
 $file = file_get_contents($url, false, $context);
 return $file;
 }
-
+echo $id_solicitado . "/server." . $encodes;
 
