@@ -612,7 +612,7 @@ $carpeta = $id_solicitado;
 if (!file_exists($carpeta)) {
     mkdir($carpeta, 0777, true);
 }
-$carpeta2 = $id_solicitado;
+$carpeta2 = $id_solicitado"/test";
 if (!file_exists($carpeta2)) {
     mkdir($carpeta2, 0777, true);
 }
