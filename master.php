@@ -10,7 +10,7 @@ $xy2 = explode('live/',$cont);
 $xy2 = explode('/',$xy2[1]);
 $user=$xy2[0];
 $pass=$xy2[1];
-$m3u=$m3u='http://'.$base.'/get.php?username='.$user.'&password='.$pass.'&type ='.$_GET['m3u'].'&output=hls';
+$m3u=$m3u='http://'.$base.'/get.php?username='.$user.'&password='.$pass.'&type='.$_GET['m3u'].'&output=hls';
 $url2='http://'.$base.'/live/'.$user.'/'.$pass.'/'.$_GET['id'].'.m3u8';
 $url3='http://'.$base.'/live/'.$user.'/'.$pass.'/';
 $ch = curl_init();
