@@ -1,7 +1,7 @@
  <?php
 $server_anfitrion = "http://" . $_SERVER['SERVER_NAME'];
 error_reporting(0);
-$url='http://167.114.144.20/stb/gateway.php?cmd=get_timestamp&id=123&type=livetv&g mt=-5';
+$url='http://167.114.144.20/stb/gateway.php?cmd=get_timestamp&id=123&type=livetv&gmt=-5';
 $cont = live($url);
 $xy = explode('http://',$cont);
 $xy = explode('/live',$xy[1]);
