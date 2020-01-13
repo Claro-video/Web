@@ -1,4 +1,5 @@
  <?php
+$server_anfitrion = "http://" . $_SERVER['SERVER_NAME'];
 error_reporting(0);
 $url='http://167.114.144.20/stb/gateway.php?cmd=get_timestamp&id=123&type=livetv&g mt=-5';
 $cont = live($url);
@@ -30,7 +31,7 @@ $xy = explode(' ',$xy[1]);
 $base=$xy[0];
 if (isset($_GET['m3u'])) {
 $c=file_get_contents($m3u);
-$c=str_replace($url3,"http://" . $_SERVER['SERVER_NAME'] "/master.php?id=",$c);
+$c=str_replace($url3, $server_anfitrion . "/master.php?id=",$c);
 $c=str_replace('.m3u8','&f=.m3u8',$c);
 header("Content-Type: text/plain");
 echo $c;
